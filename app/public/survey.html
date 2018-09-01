@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>FFF</title>
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat+Alternates" rel="stylesheet">
+	<script src="https://code.jquery.com/jquery-3.3.1.js"
+	integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+	crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+	<meta content="width=device-width, initial-scale=1.0" id="viewport">
+	<style>
+	          html, body {
+	              background-image: url("http://paolarosser.com/wp-content/uploads/2018/05/shutterstock_586279163.jpg");
+	              background-repeat:no-repeat;
+	              background-attachment:fixed;
+	              text-align: right;
+	              background-color: blanchedalmond;
+	              color: brown;
+	              border: 5px solid darkorange;
+	          }
+	          h1 {
+	              float: left;
+	              font-size: 400%;
+	              color: darkorange;
+	              text-align:center;
+	              font-family: 'Montserrat', sans-serif;
+	              display: flex; 
+	              justify-content: center;
+	              padding-left: 10%;
+	              padding-right: 10%;
+	              padding-top: 2%;
+	          }
+	          h2
+	          {
+	              text-align: right;
+	              color: brown;
+	              text-align:center;
+	              font-family: 'Montserrat', sans-serif;
+	              display: flex; 
+	              justify-content: center;
+	              padding-right: 10%;
+	              padding-top: 10%;
+	          }
+	          h4
+	          {
+	           	  text-align: right;
+	              color: brown;
+	              padding-right: 10%;
+	              padding-top: 10%;
+	          }
+			  .form-group {
+	   			  padding-right: 10%;
+	   			  padding-left: 10%;
+			  }
+			  #note{
+				  text-align: center;
+				  margin-top: 10px;
+			  }
+</style>
+</head>
+<body>
+	<div class="responses">
+		<br>
+		<h1>Ten True/False Questions</h1>
+		<h4>"Understanding Human Sexuality" (Canadian Ed., 2001)</h4>
+		<form>
+			<h4><b>Name</b></h4>
+			<div class="form-group">
+				<input class="form-control" id="name" type="text">
+			</div>
+			<div class="form-group">
+				<p><b>Animal Avatar</b></p><b><a href="https://pixabay.com/en/photos/zoo/" target="_blank">Please chose from one the options here. Make sure to take the jpg URL</a><br>
+				<br></b> <input class="form-control" id="photo" placeholder="Add jpg URL here" type="text">
+			</div>
+			<div class="form-group">
+				<p><b>Openness, mutual self-disclosure, and becoming emotional are qualities of intimacy</b></p>
+				<select class="form-control" id="q1">
+					<option value="empty">
+					</option>
+					<option value="1">
+						Strongly Disagree
+					</option>
+					<option value="2">
+						Disagree
+					</option>
+					<option value="3">
+						Not sure
+					</option>
+					<option value="4">
+						Agree
+					</option>
+					<option value="5">
+						Strongly Agree
+					</option>
+				</select>
+			</div>
+			<div class="form-group">
+				<p><b>Jealousy is found in every culture</b></p><select class="form-control" id="q2">
+					<option value="empty">
+					</option>
+					<option value="1">
+						Strongly Disagree
+					</option>
+					<option value="2">
+						Disagree
+					</option>
+					<option value="3">
+						Not sure
+					</option>
+					<option value="4">
+						Agree
+					</option>
+					<option value="5">
+						Strongly Agree
+					</option>
+				</select>
+			</div>
+			<div class="form-group">
+				<p><b>Not every culture values physical attractiveness</b></p><select class="form-control" id="q3">
+					<option value="empty">
+					</option>
+					<option value="1">
+						Strongly Disagree
+					</option>
+					<option value="2">
+						Disagree
+					</option>
+					<option value="3">
+						Not sure
+					</option>
+					<option value="4">
+						Agree
+					</option>
+					<option value="5">
+						Strongly Agree
+					</option>
+				</select>
+			</div>
+			<div class="form-group">
+				<p><b>Passionate love is more important in a collectivist society than an individualist society in finding a mate</b></p><select class="form-control" id="q4">
+					<option value="empty">
+					</option>
+					<option value="1">
+						Strongly Disagree
+					</option>
+					<option value="2">
+						Disagree
+					</option>
+					<option value="3">
+						Not sure
+					</option>
+					<option value="4">
+						Agree
+					</option>
+					<option value="5">
+						Strongly Agree
+					</option>
+				</select>
+			</div>
+			<div class="form-group">
+				<p><b>Playing "hard to get" is a proven strategy for women to find a mate</b></p><select class="form-control" id="q5">
+					<option value="empty">
+					</option>
+					<option value="1">
+						Strongly Disagree
+					</option>
+					<option value="3">
+						Not sure
+					</option>
+					<option value="4">
+						Agree
+					</option>
+					<option value="5">
+						Strongly Agree
+					</option>
+				</select>
+			</div>
+			<div class="form-group">
+				<p><b>Men seem to look for women with strong reproductive capacities</b></p><select class="form-control" id="q6">
+					<option value="empty">
+					</option>
+					<option value="2">
+						Disagree
+					</option>
+					<option value="3">
+						Not sure
+					</option>
+					<option value="4">
+						Agree
+					</option>
+					<option value="5">
+						Strongly Agree
+					</option>
+				</select>
+			</div>
+			<div class="form-group">
+				<p><b>Women seem to look for men with economic resources</b></p><select class="form-control" id="q7">
+					<option value="empty">
+					</option>
+					<option value="1">
+						Strongly Disagree
+					</option>
+					<option value="2">
+						Disagree
+					</option>
+					<option value="3">
+						Not sure
+					</option>
+					<option value="4">
+						Agree
+					</option>
+					<option value="5">
+						Strongly Agree
+					</option>
+				</select>
+			</div>
+			<div class="form-group">
+				<p><b>Passionate love decreases with time</b></p><select class="form-control" id="q8">
+					<option value="empty">
+					</option>
+					<option value="1">
+						Strongly Disagree
+					</option>
+					<option value="2">
+						Disagree
+					</option>
+					<option value="3">
+						Not sure
+					</option>
+					<option value="4">
+						Agree
+					</option>
+					<option value="5">
+						Strongly Agree
+					</option>
+				</select>
+			</div>
+			<div class="form-group">
+				<p><b>Self disclosure is important for relationship building</b></p><select class="form-control" id="q9">
+					<option value="empty">
+					</option>
+					<option value="1">
+						Strongly Disagree
+					</option>
+					<option value="2">
+						Disagree
+					</option>
+					<option value="3">
+						Not sure
+					</option>
+					<option value="4">
+						Agree
+					</option>
+					<option value="5">
+						Strongly Agree
+					</option>
+				</select>
+			</div>
+			<div class="form-group">
+				<p><b>Technology has offered new and beneficial ways to meet a partner</b></p><select class="form-control" id="q10">
+					<option value="empty">
+					</option>
+					<option value="2">
+						Disagree
+					</option>
+					<option value="3">
+						Not sure
+					</option>
+					<option value="4">
+						Agree
+					</option>
+					<option value="5">
+						Strongly Agree
+					</option>
+				</select>
+			</div>
+		</form>
+<br>
+		<div class="text-center">
+			<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#jsonMode">Open Modal</button>
+		</div>
+		<div class="modal fade in" id="jsonMode" tabindex="-1" role="dialog" aria-labelledby="jsonModelLabel" aria-hidden="true">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h4 class="modal-title" id="jsonModeLabel">BEST MATCH</h4>
+					</div>
+					<div class="modal-body">
+						<h2 id="match"></h2>
+						<img id="matchPhoto" src="#">
+					</div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">CLOSE</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer>
+	<div id="note"><p><a href="/api/friends">Friends JSON</a> / <a href="https://github.com/davidmacfadyen/W14HW2">Github</a></p></div>
+	</footer>
+	<br>
+<script type="text/javascript">
+	$("#submitBtn").on("click", function(event) {
+		event.preventDefault();
+
+		var valid = true;
+
+		if($("#name").val() === "" || $("#photo").val() === "") {
+			valid = false;
+		} else if($("#q1").val() === "empty" || 
+			$("#q2").val() === "empty" || 
+			$("#q3").val() === "empty" || 
+			$("#q4").val() === "empty" || 
+			$("#5").val() === "empty" || 
+			$("#q6").val() === "empty" || 
+			$("#q7").val() === "empty" || 
+			$("#q8").val() === "empty" || 
+			$("#q9").val() === "empty" || 
+			$("#q10").val() === "empty") {
+			valid = false;
+		}
+
+		if(valid === true) {
+			var member = {
+				name: $("#name").val().trim(),
+				photo: $("#photo").val().trim(),
+				scores: [
+					$("#q1").val(),
+					$("#q2").val(),
+					$("#q3").val(),
+					$("#q4").val(),
+					$("#q5").val(),
+					$("#q6").val(),
+					$("#q7").val(),
+					$("#q8").val(),
+					$("#q9").val(),
+					$("#q10").val()
+				]
+			};
+
+			var currentURL = window.location.origin;
+
+			$.post(currentURL + "/api/friends.js", member, function(data) {
+				$("#match").text(data.name);
+				$("#matchPhoto").attr("src", data.photo);
+				$("#jsonMode").modal("show");
+			});
+		} else {
+			alert("Please Complete All Fields");
+		}
+	});
+</script>
+</body>
+</html>
